@@ -1,0 +1,16 @@
+form input {
+    display:block;
+}
+form label {
+    display:block;
+    float:left;
+    clear:left;
+}
+
+/* form label {
+    white-space:pre;
+}
+
+form label:before {
+    content:'\a';
+} */
