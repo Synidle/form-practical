@@ -4,21 +4,29 @@ const submitButton = document.getElementById("submit");
 
 for (let rb of childrenRadio)
     rb.addEventListener("change", (event) => 
-        toggleConditional(event, "div-child-age"));
+        toggleConditional(event, "div-child-age", "child-age"));
 for (let rb of petsRadio)
     rb.addEventListener("change", (event) =>
-        toggleConditional(event, "div-species"));
+        toggleConditional(event, "div-species", "species"));
 
 submitButton.addEventListener("click", (event) => {
-    event.preventDefault();
+    //event.preventDefault();
+    //alert("Submit Succesfully!");
 });
 
-function toggleConditional(event, id)
+function toggleConditional(event, divID, inputID)
 {
-    let target = document.getElementById(id);
+    let div = document.getElementById(divID);
+    let input = document.getElementById(inputID);
 
     if (event.target.value == "yes")
-        target.style.display = "block";
+    {
+        div.style.display = "block";
+        input.required = true;
+    }
     else
-        target.style.display = "none";
+    {
+        div.style.display = "none";
+        input.required = false;
+    }
 }
