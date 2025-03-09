@@ -30,27 +30,31 @@
                         regularly visiting your home? *
                     </legend>
                     <label for="yes-children">Yes</label>
-                    <input id="yes-children"
+                    <input id="yes-children" value="yes"
                         name="has-children" type="radio" required>
                     <label for="no-children">No</label>
-                    <input id="no-children"
+                    <input id="no-children" value="no"
                         name="has-children" type="radio">
                 </fieldset>
-                <label for="child-age">What is the age of the youngest child? *</label>
-                <!-- add required attribute in js -->
-                <input id="child-age" name="child-age" type="number">   
+                <div class="conditional" id="div-child-age">
+                    <label for="child-age">What is the age of the youngest child? *</label>
+                    <!-- add required attribute in js -->
+                    <input id="child-age" name="child-age" type="number">   
+                </div>
                 <fieldset>
                     <legend>Do you have other pets living in your home? *</legend>
                     <label for="yes-pets">Yes</label>
-                    <input id="yes-pets"
+                    <input id="yes-pets" value="yes"
                         name="other-pets" type="radio" required>
                     <label for="no-pets">No</label>
-                    <input id="no-pets"
+                    <input id="no-pets" value="no"
                         name="other-pets" type="radio">
                 </fieldset>
-                <label for="species">What species is/are the other pet(s)? *</label>
-                <!-- add required attribute in js -->
-                <input id="species" name="species" type="text">
+                <div class="conditional" id="div-species">
+                    <label for="species">What species is/are the other pet(s)? *</label>
+                    <!-- add required attribute in js -->
+                    <input id="species" name="species" type="text">
+                </div>
                 <button id="submit" type="submit" value="submit">Submit</button>
             </fieldset>
         </form>

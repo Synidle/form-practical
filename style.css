@@ -7,6 +7,10 @@ form label {
     clear:left;
 }
 
+.conditional {
+    display:none;
+}
+
 /* form label {
     white-space:pre;
 }
